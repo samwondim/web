@@ -1,0 +1,41 @@
+body {
+	margin: 10px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.card-wrapper {
+	display: flex;
+	width: 400px;
+	margin: 0 auto;
+	flex-direction: column;
+	border: 1px solid rgb(101, 152, 101);
+	border-radius: 4px;
+}
+
+.number {
+	color: rgba(240, 233, 233, 0.611);
+	width: 40px;
+	height: 40px;
+	background-color: rgb(68, 99, 68);
+	text-align: center;
+	margin: 0px 0px 0px 800px;
+	border: none;
+	border-radius: 50%;
+}
+
+ul {
+	margin: 0px;
+}
+
+.color {
+	color: rgb(36, 35, 35);
+}
+
+.card-top {
+	background: rgba(101, 152, 101, 0.833);
+	padding: 10px;
+}
+
+.card-bottom {
+	padding: 5px 10px;
+}
