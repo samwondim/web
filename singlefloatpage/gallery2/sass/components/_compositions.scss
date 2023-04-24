@@ -1,0 +1,29 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        width: 45%;
+        position: absolute;
+        transition: all .2s;
+
+        &--p1 {
+            top: -2rem;
+            left: 0;
+        }
+
+        &--p2 {
+            top: 1rem;
+            left: 35rem;
+        }
+
+        &--p3 {
+            top: 4rem;
+            left: 17rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            z-index: 20;
+        }
+    }
+}
