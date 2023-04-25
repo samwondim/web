@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 5px;
+    min-height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+.container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    background-color: black;
+    color: white;
+}
+
+.col {
+    float: left;
+    position: relative;
+    padding: 5px;
+}
+
+.col-4 {
+    width: 25%;
+}
+
+.col-3 {
+    width: 33.3%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-1 {
+    width: 100%;
+    text-align: center;
+}
+
+.col-1 .content {
+    text-align: justify;
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid #6a6666;
+    padding: 10px;
+}
+
+.box .content {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.box .content::first-letter {
+    font-size: 2em;
+}
+
+.box header {
+    background-color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    font-size: 2em;
+    color: white;
+}
+
+.box footer {
+    background-color: #6a6666;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.5em;
+    color: white;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid rgb(87, 80, 80);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.437);
+    text-align: center;
+}
+
+.mainForm {
+    padding: 25px;
+    background-color: #6a6666;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #2222227c;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #222;
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin: 10px 0;
+}
+
+.hero {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    z-index: 10;
+    background-image: url(../res/markus-spiske-hbb6GkG6p9M-unsplash.jpg);
+    height: 85vh;
+}
+
+.hero img {
+    z-index: 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero h2 {
+    font-size: 2em;
+}
+
+.header {
+    height: 100px;
+}
+
+.section {
+    clear: both;
+    border: 1px solid #ddd;
+    padding: 20px 0;
+    background-color: #929090;
+    height: auto;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    background-color: rgba(34, 34, 232, 0.949);
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+nav ul li:hover a {
+    background-color: white;
+    color: black;
+}
+
+.mainHeader {
+    position: fixed;
+    background-color: rgba(16, 2, 2, 0.446);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 5px;
+}
+
+@media all and (max-width: 760px) {
+    .logo {
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .mainHeader {
+        height: auto;
+    }
+
+    nav ul {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav ul li {
+        float: initial;
+        display: inline-block;
+    }
+
+    nav ul li a {
+        padding: 0 15px;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .col-3 {
+        width: 100%;
+        margin: auto 0;
+    }
+
+    .mainForm {
+        width: 100%;
+    }
+}
